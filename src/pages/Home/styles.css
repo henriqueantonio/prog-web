@@ -1,0 +1,75 @@
+.container {
+    background: #1b1b1d;
+}
+
+.header {
+    padding: 20px;
+    display: flex;
+    place-content: center;
+}
+
+.header-span{
+    color: #f4f4f4;
+    font-size: 32px;
+    font-family: 'Roboto';
+}
+
+.menu {
+    padding: 0 50px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    background: rgb(30, 29, 33);
+    justify-content: space-between;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.menu-logo {
+    width: 100px;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 40px;
+}
+
+.menu-option {
+    color: #ffff;
+    font-family: 'Roboto';
+    font-weight: 100;
+    font-size: 28px;
+    margin: 0 20px;
+    cursor: pointer;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(235, 92, 88);
+}
+
+.menu-option:hover {
+    color: rgb(235, 92, 88);
+    border-bottom: 1px solid #ffff;
+    transition: 0.5s;
+}
+
+.menu-icons {
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    color: white;
+    margin: 0 20px;
+    transform: scale(1.5,1.5);
+    cursor: pointer;
+}
+
+.menu-icon:hover {
+    color: rgb(235, 92, 88);
+    transition: 0.5s;
+}
+
+.background {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    background-image: url('../../assets/background.jpg');
+}
