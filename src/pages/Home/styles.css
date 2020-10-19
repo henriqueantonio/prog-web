@@ -1,75 +1,109 @@
-.container {
-    background: #1b1b1d;
+.container-fluid {
+    padding: 0;
+    background-color: #f3f3f3;
 }
 
-.header {
+.header-title {
     padding: 20px;
-    display: flex;
-    place-content: center;
 }
 
-.header-span{
-    color: #f4f4f4;
-    font-size: 32px;
-    font-family: 'Roboto';
-}
-
-.menu {
-    padding: 0 50px;
-    height: 150px;
-    display: flex;
-    align-items: center;
-    background: rgb(30, 29, 33);
-    justify-content: space-between;
-    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
-}
-
-.menu-logo {
+.icon{
     width: 100px;
-    height: 150px;
-    object-fit: contain;
-    border-radius: 40px;
+    height: 100px;
+    border-radius: 5px;
 }
 
-.menu-option {
-    color: #ffff;
-    font-family: 'Roboto';
-    font-weight: 100;
-    font-size: 28px;
-    margin: 0 20px;
-    cursor: pointer;
-    padding-bottom: 10px;
-    border-bottom: 1px solid rgb(235, 92, 88);
+.icons {
+    margin-left: 10px;
+    
 }
 
-.menu-option:hover {
-    color: rgb(235, 92, 88);
-    border-bottom: 1px solid #ffff;
-    transition: 0.5s;
-}
-
-.menu-icons {
-    display: flex;
-    align-items: center;
-}
-
-.menu-icon {
-    color: white;
-    margin: 0 20px;
-    transform: scale(1.5,1.5);
+.fas {
     cursor: pointer;
 }
 
-.menu-icon:hover {
-    color: rgb(235, 92, 88);
-    transition: 0.5s;
-}
-
-.background {
-    width: 100%;
-    height: 700px;
-    object-fit: cover;
+.content {
     background-image: url('../../assets/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 75vh;
+}
+
+.jumbotron {
+    background: transparent
+}
+
+/* segunda parte */
+
+.second-part {
+    background: #020202;
+    color: #ffff;
+    height: 100vh;
+}
+
+.carousel {
+    margin-top: 50px;
+}
+
+.carousel-caption {
+    color: #020202;
+}
+.carousel-image {
+    height: 700px;
+    object-fit: contain;
+}
+
+/* terceira parte */
+
+.third-part {
+    background: #f3f3f3;
+    height: 100vh;
+    color: #020202;
+}
+
+.third-part-title {
+    margin: 50px 0;
+}
+
+/* fourth part */
+
+.fourth-part {
+    background: #020202;
+    color: #f3f3f3;
+}
+
+.person-icon {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    object-fit: cover;
+    background: #ffff;
+}
+
+.list-unstyled {
+    padding-top: 100px;
+}
+
+.media {
+    margin: 0 20px;
+}
+
+.contactAddress {
+    margin-top: 100px;
+}
+
+.contact {
+    margin-top: 20px;
+}
+
+.fab {
+    cursor: pointer;
+}
+
+.icons-socials {
+    padding: 50px 0;
+}
+
+.icon-social {
+    margin-left: 20px;
 }
