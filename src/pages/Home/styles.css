@@ -37,7 +37,12 @@
 .second-part {
   background: #020202;
   color: #ffff;
-  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.more-products {
+  margin: 40px 0;
 }
 
 .carousel {
@@ -122,4 +127,9 @@
 
 .icon-social {
   margin-left: 20px;
+}
+
+.login {
+  text-decoration: none;
+  color: inherit;
 }
