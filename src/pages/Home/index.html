@@ -37,35 +37,38 @@
       </div>
 
       <div class="d-flex justify-content-around align-items-center navbar">
-        <div class="">
+        <div class="icon">
           <img class="icon" src="../../assets/icone.png" alt="Icone" />
         </div>
         <div class="">
-          <div class="btn-group" role="group" aria-label="Basic example">
+          <div class="btn-group buttons" role="group">
             <a href="../MoreProducts/" class="btn btn-dark">Loja</a>
             <a href="#contact" class="btn btn-dark">Contato</a>
             <a href="#map" class="btn btn-dark">Mapa</a>
           </div>
         </div>
-        <div class="">
+        <div class="icons">
           <a href="../Login" class="login">
             <i class="fas fa-sign-in-alt fa-lg"></i>
           </a>
           <i class="icons fas fa-search fa-lg"></i>
-          <a href="../MoreProducts/" class="login">
+          <a href="../Cart/" class="login">
             <i class="icons fas fa-shopping-cart fa-lg"></i>
           </a>
         </div>
       </div>
 
-      <div class="content d-flex justify-content-center">
+      <div class="content d-flex justify-content-center slogan">
         <div class="jumbotron text-center">
           <h1 class="display-4">Você não viu nada igual!</h1>
           <p class="lead">Elegância, curvas, aiFone.</p>
           <hr class="my-4" />
-          <button type="button" class="btn btn-outline-dark btn-lg">
+          <a
+            href="../SignUp"
+            class="registerButton btn btn-outline-dark btn-lg"
+          >
             Cadastre-se
-          </button>
+          </a>
         </div>
       </div>
 
@@ -141,29 +144,29 @@
       <!-- terceira parte -->
       <div class="third-part d-flex flex-column align-items-center">
         <h1 class="d-flex align-self-center third-part-title">Veja sobre</h1>
-        <iframe
-          class="youtube"
-          src="https://www.youtube.com/embed/dzMtCKWMynU"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+        <div class="embed-responsive embed-responsive-21by9">
+          <iframe
+            src="https://youtu.be/Qc_Upu3f_D4"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
     </div>
 
     <!-- fourth part -->
     <div class="fourth-part">
-      <ul class="list-unstyled d-flex justify-content-center">
-        <li class="media">
+      <ul id="medias" class="list-unstyled d-flex justify-content-center">
+        <li class="media media-view">
           <img src="../../assets/elon.jpg" class="mr-3 person-icon" alt="..." />
           <div class="media-body">
             <h5 class="mt-0 mb-1">Elon Musk</h5>
             Fantástico, uso em conjunto com meus produtos Tesla. Gosto do
-            diferencial e da eficiência que o telefone trás. Atende todas as
-            minhas necessidades e também as da minnha equipe.
+            diferencial e da eficiência que o telefone trás.
           </div>
         </li>
-        <li class="media">
+        <li class="media media-view">
           <img src="../../assets/bill.jpg" class="mr-3 person-icon" alt="..." />
           <div class="media-body">
             <h5 class="mt-0 mb-1">Bill Gates</h5>
@@ -171,7 +174,7 @@
             encontradas aqui.
           </div>
         </li>
-        <li class="media">
+        <li class="media media-view">
           <img
             src="../../assets/steve.jpg"
             class="mr-3 person-icon"

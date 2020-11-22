@@ -26,7 +26,7 @@
             <div class="card fat">
               <div class="card-body">
                 <h4 class="card-title">Login</h4>
-                <form action="logando" method="POST">
+                <form action="../Home/">
                   <p></p>
                   <div class="form-group">
                     <label for="name">Nome</label>
@@ -59,6 +59,7 @@
                   <div class="form-group">
                     <label for="senha">Senha </label>
                     <input
+                      required
                       type="password"
                       class="form-control border-secondary"
                       placeholder="Insira sua senha..."
@@ -75,15 +76,13 @@
                   </div>
 
                   <div class="form-group no-margin">
-                    <button type="submit" class="btn btn-danger btn-block">
+                    <button type="submit" class="btn btn-dark btn-block">
                       Login
                     </button>
                   </div>
                   <div class="margin-top20 text-center">
                     Você já possui uma conta?
-                    <a href="../Login/" class="cadastro text-danger">
-                      Cadastre-se
-                    </a>
+                    <a href="../Login/" class="cadastro text-danger"> Login </a>
                   </div>
                 </form>
               </div>
