@@ -35,7 +35,8 @@ $(document).ready(() => {
   let products = JSON.parse(localStorage.getItem("products"));
 
   if (!products) {
-    products = localStorage.setItem("products", JSON.stringify(productsArray));
+    localStorage.setItem("products", JSON.stringify(productsArray));
+    products = productsArray;
   }
 
   const addToCart = (id) => {
