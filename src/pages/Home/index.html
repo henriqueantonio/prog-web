@@ -42,9 +42,9 @@
         </div>
         <div class="">
           <div class="btn-group" role="group" aria-label="Basic example">
-            <button type="button" class="btn btn-dark">Loja</button>
-            <button type="button" class="btn btn-dark">Contato</button>
-            <button type="button" class="btn btn-dark">Mapa</button>
+            <a href="../MoreProducts/" class="btn btn-dark">Loja</a>
+            <a href="#contact" class="btn btn-dark">Contato</a>
+            <a href="#map" class="btn btn-dark">Mapa</a>
           </div>
         </div>
         <div class="">
@@ -52,7 +52,9 @@
             <i class="fas fa-sign-in-alt fa-lg"></i>
           </a>
           <i class="icons fas fa-search fa-lg"></i>
-          <i class="icons fas fa-shopping-cart fa-lg"></i>
+          <a href="../MoreProducts/" class="login">
+            <i class="icons fas fa-shopping-cart fa-lg"></i>
+          </a>
         </div>
       </div>
 
@@ -127,23 +129,20 @@
           </a>
         </div>
         <div>
-          <button
-            type="button"
+          <a
+            href="../MoreProducts"
             class="btn btn-outline-light btn-lg more-products"
           >
             Mais produtos
-          </button>
+          </a>
         </div>
       </div>
 
       <!-- terceira parte -->
       <div class="third-part d-flex flex-column align-items-center">
         <h1 class="d-flex align-self-center third-part-title">Veja sobre</h1>
-
         <iframe
           class="youtube"
-          width="1150"
-          height="693"
           src="https://www.youtube.com/embed/dzMtCKWMynU"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -192,7 +191,7 @@
       <div
         class="contactAddress d-flex flex-column align-items-center justify-content-center"
       >
-        <div class="address">
+        <div class="address" id="contact">
           <i class="fas fa-map-marker-alt fa-lg"></i>
           <span>Rua Não Sei Aonde, 0000 - Curitiba, Paraná</span>
         </div>
