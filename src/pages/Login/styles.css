@@ -13,6 +13,8 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
   position: relative;
   z-index: 1;
+  text-decoration: none;
+  color: inherit;
 }
 
 .my-login-page .brand img {
@@ -69,4 +71,9 @@
   .my-login-page .card.fat .card-body {
     padding: 15px;
   }
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
