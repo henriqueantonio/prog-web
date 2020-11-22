@@ -35,3 +35,12 @@ img {
   width: 200px;
   height: 200px;
 }
+
+.cartControls {
+  display: flex;
+  align-items: flex-end;
+}
+
+h6 {
+  margin-right: 20px;
+}
