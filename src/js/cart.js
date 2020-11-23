@@ -10,7 +10,7 @@ $(document).ready(() => {
       }
     });
     localStorage.setItem("products", JSON.stringify(newProductsArray));
-    location.href = "../Cart";
+    loadProducts(newProductsArray);
   };
 
   const removeToCart = (id) => {
@@ -26,13 +26,14 @@ $(document).ready(() => {
       return product;
     });
     localStorage.setItem("products", JSON.stringify(newProductsArray));
-    location.href = "../Cart";
+    loadProducts(newProductsArray);
   };
 
-  products.forEach((product) => {
-    if (product.quantity === 0) return;
-
-    $("#products").append(`
+  const loadProducts = (productsArray) => {
+    $("#products").empty();
+    productsArray.forEach((product) => {
+      if (product.quantity === 0) return;
+      $("#products").append(`
           <li class="media">
             <img src="${product.image}" class="mr-3" alt="..." />
             <div class="media-body">
@@ -60,10 +61,13 @@ $(document).ready(() => {
             </div>
           </li>
     `);
-  });
+    });
 
-  products.forEach(({ id }) => {
-    $(`#delButton-${id}`).click(() => removeToCart(id));
-    $(`#addButton-${id}`).click(() => addToCart(id));
-  });
+    products.forEach(({ id }) => {
+      $(`#delButton-${id}`).click(() => removeToCart(id));
+      $(`#addButton-${id}`).click(() => addToCart(id));
+    });
+  };
+
+  loadProducts(products);
 });
